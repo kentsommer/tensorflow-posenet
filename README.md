@@ -11,7 +11,7 @@ As described in the ICCV 2015 paper **PoseNet: A Convolutional Network for Real-
 
  * The PoseNet model is defined in the posenet.py file
 
- * The starting and trained weights (posenet.npy and PoseNet.ckpt respectively) for training were obtained by converting caffemodel weights [from here](http://vision.princeton.edu/pvt/GoogLeNet/Places/) and then training.
+ * The starting and trained weights (posenet.npy and PoseNet.ckpt respectively) for training were obtained by converting caffemodel weights [from here](http://3dvision.princeton.edu/pvt/GoogLeNet/Places/) and then training.
 
  * To run:
    * Extract the King's College dataset to wherever you prefer

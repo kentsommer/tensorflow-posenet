@@ -45,6 +45,7 @@ def preprocess(images):
 	N = 0
 	mean = np.zeros((1, 3, 224, 224))
 	for X in tqdm(images_cropped):
+                X = np.transpose(X,(2,0,1))
 		mean[0][0] += X[:,:,0]
 		mean[0][1] += X[:,:,1]
 		mean[0][2] += X[:,:,2]

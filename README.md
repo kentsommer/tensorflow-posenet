@@ -7,15 +7,14 @@ As described in the ICCV 2015 paper **PoseNet: A Convolutional Network for Real-
 
  * Download the Cambridge Landmarks King's College dataset [from here.](https://www.repository.cam.ac.uk/handle/1810/251342)
 
- * Download the starting and trained weights [from here.](https://drive.google.com/file/d/0B5DVPd_zGgc8ZmJ0VmNiTXBGUkU/view?usp=sharing)
+ * Download the starting weights [from here.](https://github.com/kentsommer/tensorflow-posenet/releases/download/1.0.0/posenet.npy)
 
  * The PoseNet model is defined in the posenet.py file
 
- * The starting and trained weights (posenet.npy and PoseNet.ckpt respectively) for training were obtained by converting caffemodel weights [from here](http://3dvision.princeton.edu/pvt/GoogLeNet/Places/) and then training.
+ * The starting weights (posenet.npy) for training were obtained by converting caffemodel weights [from here](http://3dvision.princeton.edu/pvt/GoogLeNet/Places/).
 
  * To run:
    * Extract the King's College dataset to wherever you prefer
-   * Extract the starting and trained weights to wherever you prefer
-   * Update the paths on line 13 (train.py) as well as lines 15 and 17 (test.py)
-   * If you want to retrain, simply run train.py (note this will take a long time)
-   * If you just want to test, simply run test.py 
+   * Extract the starting weights
+   * To train, simply run train.py after setting the [path to the King's College dataset](https://github.com/kentsommer/tensorflow-posenet/blob/master/train.py#L13-L14) (note this will take a long time)
+   * After training, to test run test.py after updating the paths on [these lines](https://github.com/kentsommer/tensorflow-posenet/blob/master/test.py#L17-L18)
